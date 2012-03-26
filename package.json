@@ -1,0 +1,18 @@
+{
+  "author": "David Roncancio <david@roncancio.me>",
+  "name": "Transmilleno",
+  "description": "Rutas de Transmilenio",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kuryaki/Transmilleno.git"
+  },
+  "engines": {
+    "node": ">= 0.6.11"
+  },
+  "dependencies": {
+    "express": ">= 2.3.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
