@@ -22,5 +22,35 @@ app.get('/', function(req, res){
   res.send(definition);
 });
 
+//-------------
+// Estaciones
+//-------------
+
+var Estacion = mongoose.model('Estacion', new mongoose.Schema({
+    nombre: String
+}));
+
+//Listar Estaciones ej Marly
+app.get('/api/estaciones', function(req, res){
+    return Estacion.find(function(err, estaciones){
+        return res.send(estaciones);
+    });
+});
+
+//-------------
+// Rutas
+//-------------
+
+var Ruta = mongoose.model('Ruta', new mongoose.Schema({
+    nombre: String
+}));
+
+//Listar Rutas ej. B14
+app.get('/api/rutas', function(req, res){
+    return Ruta.find(function(err, rutas){
+        return res.send(rutas);
+    });
+});
+
 app.listen(3000);
 
