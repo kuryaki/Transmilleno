@@ -2,9 +2,20 @@ Proyecto de las rutas de transmilenio hecho en javascript
 
 Inicialmente Node.js para el Restful API
 
-### Instalarlo
+### Instalarlo y correrlo
 
 npm install
+node app.js
+
+si no corre y saca error de mising algo o error en tick 1
+
+cd node_modules/mongoose/
+npm install -d
+
+al parecer hay un bug de npm con las dependencias de las dependencias de mongoose 
+
+
+### Data de los API
 
 hay dos objetos identificados y necesarios para el proyecto
 rutas y estaciones
